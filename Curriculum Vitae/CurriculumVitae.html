@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriulum Vitae - Proyecto Integrador</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="icon" href="curriculum-vitae.png" type="image/x-icon">
+    <script defer src="javascript1.js"></script>
+</head>
+<body>
+
+    <h1 id="curriculum_titulo-principal">Curriculum Vitae</h1>
+
+    <form class="curriculum_form" id="curriculum_form" action="curriculum_vitae">
+
+<!-- 1era parte - detalles personales -->
+
+        <div class="curriculum_conteiner-informacion" id="curriculum__informacion-detalles-personales">
+
+            <h2 class="curriculum__titulo-secundario">Detalles Personales : </h2>
+
+                <label for="foto">Foto : 
+                    <input type="file" accept="image/*" name="foto-perfil" id="foto-perfil">
+                </label>
+                
+                <label for="nombre">Nombre :
+                    <input required type="text" name="nombre" id="nombre" placeholder=" ">
+                </label>
+                <p class="curriculum___mensaje-error" id="mensaje-error0">Solo se permiten letras y espacios, pueden llevar acentos</p>
+                
+                <label for="apellido">Apellido :
+                    <input required type="text" name="apellido" id="apellido" placeholder=" ">
+                </label>
+                <p class="curriculum___mensaje-error" id="mensaje-error1">Solo se permiten letras y espacios, pueden llevar acentos</p>
+                
+                <label for="email">Email : 
+                    <input required type="email" name="correo" id="correo" placeholder=" ">
+                </label>
+                <p class="curriculum___mensaje-error" id="mensaje-error2">Solo se permiten letras, números, puntos, guiones y guion bajo</p>
+                
+                <label for="telefono">Número de teléfono :
+                    <input required type="tel" name="telefono" id="telefono" placeholder=" ">
+                </label>
+                <p class="curriculum___mensaje-error" id="mensaje-error3">Solo se permiten 7 a 14 números</p>
+                
+                <label for="ciudad">Ciudad : 
+                    <input required type="ciudad" name="ciudad" id="ciudad" placeholder=" ">
+                </label>
+                <p class="curriculum___mensaje-error" id="mensaje-error4">Solo se permiten letras y espacios, pueden llevar acentos</p>
+
+
+
+        </div>
+
+<!-- 2da parte - experiencia profesional -->
+
+        <div class="curriculum_conteiner-informacion" id="curriculum__informacion-experiencia-profesional">
+
+            <h2 class="curriculum__titulo-secundario">Experiencia Profesional : </h2>
+
+                <label for="year_month_exp1">Mes y Año de Ingreso: 
+                    <input type="month" name="year_month_exp1" id="year_month_exp1">
+                </label>
+                
+                <label for="year_month_exp2">Mes y Año de Egreso: 
+                    <input type="month" name="year_month_exp2" id="year_month_exp2">
+                </label>
+                
+                <label for="cargo">Cargo o Funciones: 
+                    <input type="text" name="cargo" id="cargo">
+                </label>
+                <p class="curriculum___mensaje-error" id="mensaje-error5">Solo se permiten letras y espacios, pueden llevar acentos</p>
+                
+                <label for="empresa">Empresa o Local: 
+                    <input type="text" name="empresa" id="empresa">
+                </label>
+                <p class="curriculum___mensaje-error" id="mensaje-error6">Solo se permiten letras y espacios, pueden llevar acentos</p>
+                
+                <label for="localidad">Localidad: 
+                    <input type="text" name="localidad" id="localidad">
+                </label>
+                <p class="curriculum___mensaje-error" id="mensaje-error7">Solo se permiten letras y espacios, pueden llevar acentos</p>
+                
+                <input type="button" value="¿Tuvo algún trabajo más?" id="otro-trabajo">
+
+
+
+
+        </div>
+
+<!-- 3era parte - formacion academica -->
+
+        <div class="curriculum_conteiner-informacion" id="curriculum__informacion-formacion-academica">
+
+            <h2 class="curriculum__titulo-secundario">Formación Académica : </h2>
+
+                <label for="titulo-carrera">Título o Carrera de Estudio: 
+                    <input required type="text" name="titulo" id="titulo">
+                </label>
+                <p class="curriculum___mensaje-error" id="mensaje-error8">Solo se permiten letras y espacios, pueden llevar acentos</p>
+                
+                <label for="year_month1">Mes y Año de Egreso: 
+                    <input type="month" name="year_month1" id="year_month1">
+                </label>
+                
+                <label for="centro_estudio1">Centro de Estudio: 
+                    <input required type="text" name="centro_estudio1" id="centro_estudio1">
+                </label>
+                <p class="curriculum___mensaje-error" id="mensaje-error9">Solo se permiten letras, números y espacios, pueden llevar acentos</p>
+                
+                <label for="lugar_estudio">Lugar de Estudio: 
+                    <input required type="text" name="lugar_estudio" id="lugar_estudio">
+                </label>
+                <p class="curriculum___mensaje-error" id="mensaje-error10">Solo se permiten letras y espacios, pueden llevar acentos</p>
+
+
+
+
+        </div>
+
+<!-- 4ta parte - formacion complementaria -->
+
+        <div class="curriculum_conteiner-informacion" id="curriculum__informacion-formacion-complementaria">
+
+            <h2 class="curriculum__titulo-secundario">Formación Complementaria : </h2>
+
+                <label for="curso">Nombre del curso: 
+                    <input type="text" name="curso" id="curso">
+                </label>
+                <p class="curriculum___mensaje-error" id="mensaje-error11">Solo se permiten letras y espacios, pueden llevar acentos</p>
+            
+                <label for="centro_estudio2">Centro de Estudio: 
+                    <input type="text" name="centro_estudio2" id="centro_estudio2">
+                </label>
+                <p class="curriculum___mensaje-error" id="mensaje-error12">Solo se permiten letras, números y espacios, pueden llevar acentos</p>
+            
+                <label for="year_month2">Mes y Año de Egreso: 
+                    <input type="month" name="year_month2" id="year_month2">
+                </label>
+            
+                <input type="button" value="¿Tuvo algún curso más?" id="otro-curso">
+
+
+        </div>
+
+
+
+<!-- 5ta parte - informatica -->
+
+        <div class="curriculum_conteiner-informacion-radios" id="curriculum__informacion-informatica">
+
+            <h2 class="curriculum__titulo-secundario">Informática : </h2>
+            <h4>Nivel de Saberes Informáticos : </h4>
+                <label forz="nivel_informatica">
+                    <input type="radio" name="informatica_nivel" id="bajo_informatica">Bajo 
+                    <input type="radio" name="informatica_nivel" id="medio_informatica">Medio 
+                    <input type="radio" name="informatica_nivel" id="alto_informatica">Alto 
+                </label>
+
+
+        </div>
+
+<!-- 6ta parte - idiomas -->
+
+        <div class="curriculum_conteiner-informacion-radios" id="curriculum__informacion-idiomas">
+
+            <h2 class="curriculum__titulo-secundario">Idiomas : </h2>
+            <h4>Nivel de Inglés : </h4>
+                <label for="nivel_ingles">
+                    <input type="radio" name="ingles_nivel" id="bajo-ingles">Bajo
+                    <input type="radio" name="ingles_nivel" id="medio-ingles">Medio
+                    <input type="radio" name="ingles_nivel" id="alto-ingles">Alto
+                </label>
+                <br>
+                <label for="otro_idioma">Otro idioma: 
+                    <input type="text" name="idioma2" id="idioma2" placeholder=" Especifique">
+                </label>
+
+
+        </div>
+
+<!-- 7ma parte - otros datos -->
+
+        <div class="curriculum_conteiner-informacion" id="curriculum__informacion-otros-datos">
+
+            <h2 class="curriculum__titulo-secundario">Otros Datos : </h2>
+
+                <label for="otros_datos">
+                    <input type="text" name="otros_datos" id="otros_datos">
+                </label>
+
+
+        </div>
+
+<!-- 8va botón de envio -->
+
+        <div id="curriculum__envio">
+
+            <button type="button" id="envio-curriculum">Enviar Curriculum Vitae</button>
+            
+        </div> 
+
+    </form>
+    
+    
+    <footer>
+        <p>@JoaquínLascurain2023</p>
+        <a href="mailto:lascujoaqui@gmail.com">Correo : lascujoaqui@gmail.com</a>
+    </footer>
+
+</body>
+</html>

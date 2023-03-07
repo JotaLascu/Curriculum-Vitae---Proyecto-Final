@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+/* Todo */
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    
+    }
+    
+/* Generales */
+    
+    body{
+    
+        background-color: rgb(200, 200, 200);
+    
+    }
+
+    .curriculum_form{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+
+        padding: 20px;
+    
+    }
+    
+    #curriculum_titulo-principal{
+    
+        margin: 20px;
+        text-align: center;
+        font-size: 3rem;
+        padding: 20px;
+        background-color: rgba(125, 125, 125, 0.5);
+        border-radius: 100px;
+    
+    }
+    
+    .curriculum__titulo-secundario{
+        
+        display: flex;
+        justify-content: center;
+
+
+        text-decoration: underline;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    
+    } 
+    
+    .curriculum_conteiner-informacion{
+    
+        background-color: lightgray;
+        display: flex;
+        text-align: left;
+        justify-content: center;
+        flex-direction: column;    
+
+        width: 450px;
+        /* min-width: 700px; */
+        margin: 20px;
+        padding: 50px;
+        gap: 15px;
+        font-size: 1.1rem;
+    
+    }   
+
+    .curriculum_conteiner-informacion-radios{
+
+        background-color: lightgray;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+
+        width: 450px;
+        /* min-width: 700px; */
+        margin: 20px;
+        padding: 50px;
+        gap: 15px;
+        font-size: 1.2rem;
+
+    }
+    
+
+    footer{
+        
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgb(125, 125, 125, 0.5);
+        padding: 15px;
+        gap: 10px;
+        font-size: 1rem;    
+        font-weight: bold;
+        width: 100%;
+    }
+    
+    #curriculum__envio{
+
+        grid-template-columns: 1fr;
+
+    }
+    
+    
+/* Específicos */
+
+    footer a{
+        
+        text-decoration: none;
+        color: black;
+
+    }
+
+    .curriculum_conteiner-informacion-radios input{
+
+        margin-left: 20px;
+        background-color: aquamarine;
+        border-radius: 5px;
+        border-color: rgba(45, 128, 226, 0.267);
+
+    }
+
+    .curriculum_conteiner-informacion-radios input:hover{
+    
+        border-color: rgba(89, 24, 150, 0.308);
+        background-color: rgba(114, 30, 180, 0.1);
+        cursor: pointer;
+
+    }
+
+    .curriculum_conteiner-informacion-radios input:focus{
+
+        border: 2px solid #6457b8;
+        outline: none;
+        box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+
+    } 
+    
+    .curriculum_conteiner-informacion input {
+    
+        width: 100%;
+        background-color: aquamarine;
+        border-radius: 5px;
+        border-color: rgba(45, 128, 226, 0.267);
+        padding: 10px;
+        font-family: Poppins, sans-serif;
+    
+    }
+    
+    .curriculum_conteiner-informacion input:hover{
+    
+        border-color: rgba(89, 24, 150, 0.308);
+        background-color: rgba(114, 30, 180, 0.1);
+        cursor: pointer;
+
+    }
+
+    .curriculum_conteiner-informacion input:focus{
+
+        border: 2px solid #6457b8;
+        outline: none;
+        box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+
+    } 
+
+    .curriculum_conteiner-informacion-radios label{
+
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+        justify-content: space-around;    
+
+    }
+    
+    #curriculum__envio button{
+        margin: 35px;
+        font-size: 1rem;
+        padding: 12px;
+        font-weight: bold;
+        background-color: violet;
+        border-radius: 10px;
+        border-style: hidden;
+        font-family: Poppins, sans-serif;
+    }
+    
+    #curriculum__envio button:hover{
+    
+        font-weight: bold;
+        padding: 12px;
+        background-color: rgb(189, 87, 189);
+        border-style: double;
+        cursor: pointer;
+        
+    }
+
+    /* Mensajes de Error */
+
+    .curriculum___mensaje-error{
+
+        display: none;
+
+    }
+
+    .curriculum___mensaje-error-activo{
+
+        font-size: 15px;
+        display: block;        
+        margin: 0px 0px 25px 0px;
+        padding: 5px;
+        border: 3px solid rgba(255, 0, 0, 0.8);
+        background-color: rgb(255, 10, 10, 0.5);
+    }
+
+    /* Diseño Responsive */
+
+@media (min-width: 850px){
+
+.curriculum_form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    justify-items: center;
+}
+
+#curriculum__envio, #curriculum__informacion-otros-datos{
+
+    grid-column: span 2;
+
+}
+
+} 
+
+
+
+
+
